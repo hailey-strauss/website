@@ -8,8 +8,37 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
+  body {font-family: "Lato", sans-serif}
+  .mySlides {display: none}
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .w3-hide-small {
+      display: none !important; /* Hide elements with this class on smaller screens */
+    }
+    
+    /* Show the dropdown menu */
+    .w3-dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      z-index: 1;
+    }
+    
+    /* Style the dropdown links */
+    .w3-dropdown-content a {
+      display: block;
+      padding: 12px 16px;
+      text-decoration: none;
+      color: #000;
+    }
+    
+    /* On hover, show the dropdown menu */
+    .w3-dropdown:hover .w3-dropdown-content {
+      display: block;
+    }
+  }
 </style>
 </head>
 <body>
@@ -30,11 +59,11 @@ body {font-family: "Lato", sans-serif}
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
     <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-  <a href="about.html" class="w3-bar-item w3-button w3-padding-large">ABOUT ME</a    >
-  <a href="resume.html" class="w3-bar-item w3-button w3-padding-large w3-h    ide-sm    all">RESUME</a>
+  <a href="about.html" class="w3-bar-item w3-button w3-padding-large">ABOUT ME</a>
+  <a href="resume.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RESUME</a>
   <a href="photoportfolio.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PHOTO PORTFOLIO</a>
   <a href="videoportfolio.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">VIDEO PORTFOLIO</a>
-  <a href="contact.html" class="w3-bar-item w3-button w3-padding-large" onclick=    "myFunction()">CONTACT ME</a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT ME</a>
 </div>
 
 <!-- Page content -->
@@ -53,7 +82,16 @@ body {font-family: "Lato", sans-serif}
       <p class="w3-medium">&copy; Hailey Strauss 2024</p>
         </center>
     </footer>
-
+    <script>
+      function toggleMenu() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+    </script>
 
 </body>
 </html>

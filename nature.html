@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Hailey Strauss</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+table, th, td {
+  border:1px solid black;
+}
+
+</style>
+</head>
+<body style="background-color:black">
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+   <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+  <a href="about.html" class="w3-bar-item w3-button w3-padding-large">ABOUT ME</a>
+  <a href="resume.html" class="w3-bar-item w3-button w3-padding-large w3-h    ide-small">RESUME</a>
+    <a href="photoportfolio.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PHOTO PORTFOLIO</a>
+    <a href="videoportfolio.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">VIDEO PORTFOLIO</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-padding-l    arge w3-hide-small">CONTACT ME</a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+ <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-padding-large">ABOUT ME</a        >
+    <a href="resume.html" class="w3-bar-item w3-button w3-padding-large w3-h    ide-small">RESUME</a>
+ <a href="photoportfolio.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PHOTO PORTFOLIO</a>
+  <a href="videoportfolio.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">VIDEO PORTFOLIO</a>
+  <a href="contactme.html" class="w3-bar-item w3-button w3-padding-large" onclick=    "myFunction()">CONTACT ME</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>
+
+
+  <!-- The Tour Section -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h1 class="w3-wide w3-center">NATURE PHOTOS</h1>
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+ <table style="width:100%">
+  <tr>
+    <th><img src="nature1.jpg" alt="heart" width="350"></th>
+    <th><img src="nature2.jpg" alt="heart" width="400"></th>
+  </tr>
+  <tr>
+    <td><img src="nature3.jpg" alt="heart" width="400"></td>
+    <td><img src="nature4.jpg" alt="heart" width="400"></td>
+  </tr>
+  <tr>
+    <td><img src="nature5.jpg" alt="heart" width="400"></td>
+    <td><img src="nature6.jpg" alt="heart" width="400"></td>
+  </tr>
+  <tr>
+      <td><img src="nature7.jpg" alt="heart" width="400"></td>
+      <td><img src="nature8.jpg" alt="heart" width="400"></td>
+    </tr>
+</table>
+<a href="photoportfolio.html"><button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Go Back</button></a>
+        </div>
+</div>
+    </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Ticket Modal -->
+
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+    <footer style="background-color:black"><center>
+            <p class="w3-medium"><p style="color:white">&copy; Hailey Strauss 2022</p></p>
+        </center>
+    </footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

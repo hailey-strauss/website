@@ -8,9 +8,38 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-  body {background-color:black; font-family: "Lato", sans-serif}
+  body {font-family: "Lato", sans-serif}
   .mySlides {display: none}
-  </style>
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .w3-hide-small {
+      display: none !important; /* Hide elements with this class on smaller screens */
+    }
+    
+    /* Show the dropdown menu */
+    .w3-dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      z-index: 1;
+    }
+    
+    /* Style the dropdown links */
+    .w3-dropdown-content a {
+      display: block;
+      padding: 12px 16px;
+      text-decoration: none;
+      color: #000;
+    }
+    
+    /* On hover, show the dropdown menu */
+    .w3-dropdown:hover .w3-dropdown-content {
+      display: block;
+    }
+  }
+</style>
 </head>
 <body>
 
@@ -68,6 +97,15 @@
               <p class="w3-medium"><p style="color:white">&copy; Hailey Strauss 2022</p></p>
           </center>
       </footer>
-
+      <script>
+        function toggleMenu() {
+          var x = document.getElementById("navDemo");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else {
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+      </script>
 </body>
 </html>
