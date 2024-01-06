@@ -8,8 +8,15 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
+  body {font-family: "Lato", sans-serif}
+  .mySlides {display: none}
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .w3-hide-small {
+      display: none !important; /* Hide elements with this class on smaller screens */
+    }
+  }
 </style>
 </head>
 <body>
@@ -31,10 +38,10 @@ body {font-family: "Lato", sans-serif}
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
     <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
   <a href="about.html" class="w3-bar-item w3-button w3-padding-large">ABOUT ME</a    >
-  <a href="resume.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small    ">RESUME</a>
+  <a href="resume.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RESUME</a>
   <a href="photoportfolio.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PHOTO PORTFOLIO</a>
   <a href="videoportfolio.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">VIDEO PORTFOLIO</a>
-  <a href="contact.html" class="w3-bar-item w3-button w3-padding-large" onclick=    "myFunction()">CONTACT ME</a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT ME</a>
   
 </div>
 
