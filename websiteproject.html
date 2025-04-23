@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Hailey Strauss</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body {font-family: "Lato", sans-serif}
+  .mySlides {display: none}
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .w3-hide-small {
+      display: none !important; /* Hide elements with this class on smaller screens */
+    }
+    
+    /* Show the dropdown menu */
+    .w3-dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      z-index: 1;
+    }
+    
+    /* Style the dropdown links */
+    .w3-dropdown-content a {
+      display: block;
+      padding: 12px 16px;
+      text-decoration: none;
+      color: #000;
+    }
+    
+    /* On hover, show the dropdown menu */
+    .w3-dropdown:hover .w3-dropdown-content {
+      display: block;
+    }
+  }
+</style>
+</head>
+<body style="background-color:black">
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+   <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+  <a href="about.html" class="w3-bar-item w3-button w3-padding-large">ABOUT ME</a>
+  <a href="resume.html" class="w3-bar-item w3-button w3-padding-large w3-h    ide-small">RESUME</a>
+    <a href="photoportfolio.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PHOTO PORTFOLIO</a>
+    <a href="videoportfolio.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">VIDEO PORTFOLIO</a>
+    <a href="websiteproject.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">WEBSITE PROJECTS</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-padding-l    arge w3-hide-small">CONTACT ME</a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+ <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-padding-large">ABOUT ME</a        >
+    <a href="resume.html" class="w3-bar-item w3-button w3-padding-large w3-h    ide-small">RESUME</a>
+ <a href="photoportfolio.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PHOTO PORTFOLIO</a>
+  <a href="videoportfolio.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">VIDEO PORTFOLIO</a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT ME</a>
+</div>
+
+
+  <!-- The Project Section -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h1 class="w3-wide w3-center">WEBSITE PORTFOLIO</h1>
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <div class="w3-container w3-white">
+            <p><b>Heart Project</b></p>
+            <p>Around 2016, my family’s babysitter (Alex Krohn) started a project called the Love Heart Project. Alex began this project to honor her father when he passed away unexpectedly. This project is a movement created to honor people who have changed our lives and touched our hearts. This has become my passion too: to help others and change the world for the better.</p> 
+             <p>My family and I have known Alex since I was a small child, and when she told us about the project in 2016, I started to notice more heart shapped objects around me. This got me thinking more about these heart-shaped objects, and I began to wonder if there was a deeper meaning behind them. I believe that when people leave the earth, they do not just go away. I think that they are still with us in spirit and send us little signs that they are still with us always. So, when I started noticing heart-shaped objects more, it felt like the people I had known before they passed away were sending them to me as signs to let me know that they’re still here for me. This project also resonated with my desire to give back to my parents.</p>
+            <a href="heartproject.html"><button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">See Photos</button></a>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <div class="w3-container w3-white">
+            <p><b>Softball Photos</b></p>
+            <p>I've been playing softball ever since I was a child. It has become one of many passions. My softball team, at High Point University, didn't have a photographer so I volunteered to be the person who was in charge of taking photos of our team. </p>
+            <a href="softball.html"><button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">See Photos</button></a>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <div class="w3-container w3-white">
+            <p><b>Nature Photos</b></p>
+            <p>When I first started to get into photography, I would take lots of pictures of nature. I would take pictures on my phone, and eventually I got a digital camera.</p>
+            <a href="nature.html"><button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">See Photos</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+    <footer style="background-color:black"><center>
+            <p class="w3-medium"><p style="color:white">&copy; Hailey Strauss 2025</p></p>
+        </center>
+    </footer>
+    <script>
+  
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else { 
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+      
+      // When the user clicks anywhere outside of the modal, close it
+      var modal = document.getElementById('ticketModal');
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+      </script>
+</body>
+</html>
