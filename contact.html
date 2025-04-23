@@ -49,9 +49,7 @@
           display: block;
         }
       }
-
-</style>
-
+    </style>
   </head>
   <body>
     <!-- Navbar -->
@@ -86,6 +84,11 @@
           href="videoportfolio.html"
           class="w3-bar-item w3-button w3-padding-large w3-hide-small"
           >VIDEO PORTFOLIO</a
+        >
+        <a
+          href="websiteproject.html"
+          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+          >WEBSITE PROJECTS</a
         >
         <a
           href="contactme.html"
@@ -224,7 +227,7 @@
                   </div>
                 </div>
 
-               <input
+                <input
                   class="w3-input w3-border"
                   type="text"
                   placeholder="Message"
@@ -276,24 +279,23 @@
       <p class="w3-medium">&copy; Hailey Strauss 2025</p>
     </footer>
     <script>
-  
-        // Used to toggle the menu on small screens when clicking on the menu button
-        function myFunction() {
-          var x = document.getElementById("navDemo");
-          if (x.className.indexOf("w3-show") == -1) {
-            x.className += " w3-show";
-          } else { 
-            x.className = x.className.replace(" w3-show", "");
-          }
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
         }
-        
-        // When the user clicks anywhere outside of the modal, close it
-        var modal = document.getElementById('ticketModal');
-        window.onclick = function(event) {
-          if (event.target == modal) {
-            modal.style.display = "none";
-          }
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      var modal = document.getElementById("ticketModal");
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
         }
-        </script>
+      };
+    </script>
   </body>
 </html>
